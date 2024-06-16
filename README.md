@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+#nextjs
 
-## Getting Started
+### 🟪 Setup
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+npx create-next-app@latest
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To run the app, go inside the app directory and then on the console
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### 🟪 Folders and Files Structure
 
-## Learn More
+Let us recall how the routing first
 
-To learn more about Next.js, take a look at the following resources:
+<img src='./Attachments/Pasted image 20240616114347.png'>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Similarly in NEXTjs,
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+📄 layout.js - main route element
 
-## Deploy on Vercel
+<img src='./Attachments/Pasted image 20240616113105.png'>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+📄 page.js - this is the children element of main.js
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<img src='./Attachments/Pasted image 20240616114958.png'>
+
+<img src='./Attachments/Pasted image 20240616115027.png'>
+
+### 🟪 Routing
+
+<img src='./Attachments/Pasted image 20240616115630.png'>
+
+🟩 For the common layout design like navbar, you have to write code inside the 📄 layout.js file.
+
+<img src='./Attachments/Pasted image 20240616121906.png'>
+
+<img src='./Attachments/Pasted image 20240616121928.png'>
+
+🟩 Let us create routes for `about` , `services` and `contact` page.
+
+<img src='./Attachments/Pasted image 20240616121532.png'>
+
+<img src='./Attachments/Pasted image 20240616121557.png'>
+
+### 🟪 Navigation
+
+🟩 one of the ways is to use `Link` from nextjs. This is like an anchor tag with href as its props.
+
+<img src='./Attachments/Pasted image 20240616122653.png'>
+
+🟩 show different style for active route
+
+<img src='./Attachments/Pasted image 20240616125622.png'>
+
+<img src='./Attachments/Pasted image 20240616125640.png'>
+
+🟩 another way to route is to use `useRouter()`
+
+<img src='./Attachments/Pasted image 20240616130500.png'>
+
+### 🟪 Nested Navigation
+
+Simply create folders inside.
