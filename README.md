@@ -79,3 +79,35 @@ Simply create folders inside.
 <img src='./Attachments/Pasted image 20240616193308.png'>
 
 here we should be getting `params` in which we will have the `id` as our subfolder name is `[id]`
+
+### 🟪 Grouping
+
+🟩 Here we are wrapping the folder name by first bracket `( )` so this will not be considered as a route.
+
+<img src='./Attachments/Pasted image 20240616211001.png'>
+
+🟩 but the folders created inside without the `( )` will be considered as a route
+
+<img src='./Attachments/Pasted image 20240616211248.png'>
+
+<img src='./Attachments/Pasted image 20240616211312.png'>
+
+🟩 And we can do nesting by putting new folders inside the dashboard folder.
+
+<img src='./Attachments/Pasted image 20240616211545.png'>
+
+<img src='./Attachments/Pasted image 20240616211640.png'>
+
+### 🟪 Conditional Layout
+
+Ok what if now want to see different `navbar` if we are inside the dashboard or its sub routes?
+
+Simply put condition in the `NavBar.jsx`
+
+📄 `NavBar.jsx`
+
+<img src='./Attachments/Pasted image 20240616212500.png'>
+
+so we will have this specific NavBar whenever the pathName contains `/dashboard` or its children routes.
+
+<img src='./Attachments/Pasted image 20240616212754.png'>

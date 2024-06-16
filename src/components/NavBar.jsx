@@ -25,6 +25,19 @@ const navLinks = [
 const NavBar = () => {
    const pathName = usePathname();
    const router = useRouter();
+
+   if (pathName.includes("/dashboard")) {
+      return (
+         <nav className="bg-blue-900 p-4 text-center">
+            <ul className="text-white">
+               <li>
+                  <Link href={"/dashboard/salesStats"}>Sales-Stats</Link>
+               </li>
+            </ul>
+         </nav>
+      );
+   }
+
    return (
       <>
          <nav className="flex items-center justify-between py-2">
