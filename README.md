@@ -14,7 +14,7 @@ npm run dev
 
 ### 🟪 Folders and Files Structure
 
-Let us recall how the routing first
+Let us recall first how the react routing worked:
 
 <img src='./Attachments/Pasted image 20240616114347.png'>
 
@@ -65,3 +65,17 @@ Similarly in NEXTjs,
 ### 🟪 Nested Navigation
 
 Simply create folders inside.
+
+<img src='./Attachments/Pasted image 20240616183702.png'>
+
+### 🟪 Dynamic Routing
+
+🟩 Purpose: If we click on a card view details button, it should redirect us to a page with that ID/ slug and show data accordingly.
+
+<img src='./Attachments/Pasted image 20240616193142.png'>
+
+🟩 then we should create a subfolder named `[id]` inside the `blogs` folder
+
+<img src='./Attachments/Pasted image 20240616193308.png'>
+
+here we should be getting `params` in which we will have the `id` as our subfolder name is `[id]`

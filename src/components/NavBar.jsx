@@ -16,6 +16,10 @@ const navLinks = [
       name: "Contact",
       to: "/contact",
    },
+   {
+      name: "Blogs",
+      to: "/blogs",
+   },
 ];
 
 const NavBar = () => {
@@ -31,7 +35,9 @@ const NavBar = () => {
                {navLinks.map((link) => (
                   <li key={link.to}>
                      <Link
-                        className={pathName === link.to && "text-orange-300"}
+                        className={`${
+                           pathName === link.to && "text-orange-300"
+                        }`}
                         href={link.to}
                      >
                         {link.name}
